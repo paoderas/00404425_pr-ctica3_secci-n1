@@ -1,0 +1,93 @@
+:root {
+  --primary: #2196F3;
+  --primary-hover: #0d6efd;
+  --background: #f9f9f9;
+  --card: #ffffff;
+  --text: #333;
+  --link: #1a73e8;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Animación para que aparezca con retraso */
+.shopping-cart {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: aparecer 1s ease forwards;
+  animation-delay: 1.5s;
+
+  background-color: var(--card);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+  color: var(--text);
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+ul li {
+  margin-bottom: 15px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--link);
+  font-weight: bold;
+}
+
+ul li img {
+  width: 100%;
+  max-width: 100px;
+  margin-top: 8px;
+  border-radius: 6px;
+}
+
+.btn-pay {
+  display: block;
+  text-align: center;
+  padding: 12px 0;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+}
+
+.btn-pay:hover {
+  background-color: var(--primary-hover);
+  cursor: pointer;
+}
+::selection {
+  background-color: transparent;
+  color: inherit;
+}

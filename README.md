@@ -1,4 +1,5 @@
 Respuestas a preguntas planteadas en la guía
+***********************************************************************
 EJERCICIO 2
 Pregunta:
 ¿Por qué cambia el posicionamiento de las cajas internas al div principal?, 
